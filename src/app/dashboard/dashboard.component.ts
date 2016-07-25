@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../services/hero.service';
 import { Hero } from '../services/hero';
 import { Router } from '@angular/router';
+import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 @Component({
     selector: 'my-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.css'],
+    directives: [HeroSearchComponent],
     moduleId: module.id
 })
 export class DashboardComponent implements OnInit {
